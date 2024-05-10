@@ -1,9 +1,6 @@
 <h1>Simple Node.js Server with Asynchronous Response and CORS Support</h1>
-
-    <h2>Requirements</h2>
-    <ul>
-        <li>Node.js installed on your system</li>
-    </ul>
+<h2>Requirements</h2>
+    <ul><li>Node.js installed on your system</li></ul>
 
     <h2>Getting Started</h2>
     <ol>
