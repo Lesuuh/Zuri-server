@@ -1,26 +1,28 @@
 <h1>Simple Node.js Server with Asynchronous Response and CORS Support</h1>
-This is a simple Node.js server that provides information about the user's CPU and OS, while also supporting CORS (Cross-Origin Resource Sharing). It handles multiple concurrent requests and simulates asynchronous operations with random delays.
-<h2>Requirements</h2>
-<ul>Node.js installed on your system</ul>
-<h2>Getting Started</h2>
-Getting Started
-Clone this repository to your local machine or download the files.
-Navigate to the project directory in your terminal.
-Install dependencies by running the command:
-Copy code
-npm install
-Start the server by running the command:
-Copy code
-node server.js
-The server should now be running on port 9000.
-Endpoints
-GET /
-Returns information about the user's CPU and OS.
 
-Example Response
-json
-Copy code
-{
+    <h2>Requirements</h2>
+    <ul>
+        <li>Node.js installed on your system</li>
+    </ul>
+
+    <h2>Getting Started</h2>
+    <ol>
+        <li>Clone this repository to your local machine or download the files.</li>
+        <li>Navigate to the project directory in your terminal.</li>
+        <li>Install dependencies by running the command:<br>
+            <code>npm install</code>
+        </li>
+        <li>Start the server by running the command:<br>
+            <code>node server.js</code>
+        </li>
+        <li>The server should now be running on port 9000.</li>
+    </ol>
+
+    <h2>Endpoints</h2>
+    <h3>GET /</h3>
+    <p>Returns information about the user's CPU and OS.</p>
+    <h4>Example Response</h4>
+    <pre><code>{
   "cpu": [{...}],  // Array of CPU information objects
   "uptime": 123456,  // System uptime in seconds
   "machine": "x64",  // Machine architecture
@@ -34,15 +36,22 @@ Copy code
   "hostname": "localhost",  // Hostname
   "homedir": "/Users/username",  // User's home directory
   "arch": "x64"  // OS architecture
-}
-CORS Support
-Cross-Origin Resource Sharing (CORS) is enabled for all endpoints, allowing requests from any origin.
+}</code></pre>
 
-Error Handling
-404 Not Found: Returned when the requested URL is not supported.
-405 Method Not Allowed: Returned when the HTTP method used is not supported.
-Configuration
-The server listens on port 9000 by default. You can modify the port variable in server.js to change the port.
-The timeoutDuration variable in server.js determines the maximum delay for simulating asynchronous responses.
-Notes
-This server is designed for demonstration purposes and may not be suitable for production use without further enhancements.
+    <h3>CORS Support</h3>
+    <p>Cross-Origin Resource Sharing (CORS) is enabled for all endpoints, allowing requests from any origin.</p>
+
+    <h2>Error Handling</h2>
+    <ul>
+        <li><strong>404 Not Found</strong>: Returned when the requested URL is not supported.</li>
+        <li><strong>405 Method Not Allowed</strong>: Returned when the HTTP method used is not supported.</li>
+    </ul>
+
+    <h2>Configuration</h2>
+    <ul>
+        <li>The server listens on port 9000 by default. You can modify the <code>port</code> variable in <code>server.js</code> to change the port.</li>
+        <li>The <code>timeoutDuration</code> variable in <code>server.js</code> determines the maximum delay for simulating asynchronous responses.</li>
+    </ul>
+
+    <h2>Notes</h2>
+    <p>This server is designed for demonstration purposes and may not be suitable for production use without further enhancements.</p>
